@@ -1,38 +1,23 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Code2, Cloud, Shield, Database, Smartphone, Globe } from 'lucide-react';
+import { Code2, Smartphone, Code } from 'lucide-react';
 
 const products = [
   {
+    icon: Code,
+    title: 'Nexion Smart ERP',
+    description: 'Combina el software de gestión de recursos empresariales (ERP) junto con el de gestión de relaciones con el cliente (CRM)',
+  },
+  {
     icon: Code2,
-    title: 'Desarrollo a Medida',
-    description: 'Soluciones personalizadas adaptadas a las necesidades específicas de tu negocio.',
-  },
-  {
-    icon: Cloud,
-    title: 'Cloud Solutions',
-    description: 'Infraestructura en la nube escalable y segura para tu empresa.',
-  },
-  {
-    icon: Shield,
-    title: 'Ciberseguridad',
-    description: 'Protección integral de tus datos y sistemas críticos de negocio.',
-  },
-  {
-    icon: Database,
-    title: 'Big Data & Analytics',
-    description: 'Análisis avanzado de datos para tomar decisiones estratégicas informadas.',
+    title: 'Nexion PMS',
+    description: 'Software de gestión de sueldos para resolver la liquidación de sueldos de cualquier empresa',
   },
   {
     icon: Smartphone,
-    title: 'Apps Móviles',
-    description: 'Aplicaciones nativas y multiplataforma con experiencia de usuario excepcional.',
-  },
-  {
-    icon: Globe,
-    title: 'Plataformas Web',
-    description: 'Sistemas web modernos, rápidos y optimizados para tu negocio.',
+    title: 'Nexion Smart ERP Mobile',
+    description: 'Complemento móvil de Nexion Smart ERP para ventas y cobranzas desconectadas.',
   },
 ];
 
@@ -51,7 +36,7 @@ const Products = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Nuestros <span className="text-primary-600">Productos</span>
+            Nuestros <span className="text-primary-600">productos</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Ofrecemos una amplia gama de soluciones tecnológicas diseñadas para potenciar tu empresa

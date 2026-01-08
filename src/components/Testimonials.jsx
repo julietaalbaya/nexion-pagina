@@ -5,23 +5,17 @@ import { Quote, Star } from 'lucide-react';
 
 const testimonials = [
   {
-    name: 'María González',
-    position: 'CEO, TechStart Solutions',
-    content: 'Nexion transformó completamente nuestra infraestructura digital. Su equipo profesional y su enfoque en resultados superaron nuestras expectativas. Altamente recomendados.',
+    name: 'Cdor Gustavo Capriolo',
+    position: 'Socio Gerente, Supermercado Capriolo',
+    content: 'Nexion Smart ERP es un sistema estable, muy amplio, que en nuestro rubro fue el único que tuvo la capacidad de integrar una linea de facturación compleja a todo el sistema de administración y contabilidad. El contacto cara a cara con profesionales de la zona, la rapidez en la respuesta y la posibilidad de desarrollo del mismo al no ser un enlatado, hacen que Nexion cuente con factores de diferenciación que son únicos en lo que respecta a sistemas integrales.',
     rating: 5,
   },
   {
-    name: 'Carlos Rodríguez',
-    position: 'CTO, Innovatech Industries',
-    content: 'La calidad del software desarrollado por Nexion es excepcional. Su capacidad para entender nuestras necesidades y traducirlas en soluciones efectivas es impresionante.',
+    name: 'Viviana Nestares',
+    position: 'Socia Gerente, Foto Avenida S.R.L.',
+    content: 'Con la implementación de Nexion Smart ERP, hemos podido liberar carga al personal y agilizar los procesos internos, ya sea el ingreso de la mercadería como ventas al publico, gracias a la Factura POS. El control de stock es dinámico y eficiente. Los precios de venta se actualizan y modifican en tan solo 5 minutos. Las inquietudes y dudas son resueltas con gran rapidez por parte del equipo de Nexion',
     rating: 5,
-  },
-  {
-    name: 'Ana Martínez',
-    position: 'Directora de IT, GlobalCorp',
-    content: 'Trabajar con Nexion fue una experiencia fantástica. Su soporte continuo y compromiso con la excelencia hacen que sean nuestro socio tecnológico de confianza.',
-    rating: 5,
-  },
+  }
 ];
 
 const Testimonials = () => {
@@ -39,7 +33,7 @@ const Testimonials = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-            Qué Dicen Nuestros <span className="text-primary-600">Clientes</span>
+            Qué dicen nuestros <span className="text-primary-600">clientes</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             La satisfacción de nuestros clientes es nuestro mayor logro
@@ -86,22 +80,6 @@ const Testimonials = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* Trust badge */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 30 }}
-          transition={{ duration: 0.6, delay: 0.4 }}
-          className="mt-16 text-center"
-        >
-          <div className="inline-flex items-center gap-3 bg-primary-50 px-8 py-4 rounded-full border border-primary-200">
-            <Star className="w-6 h-6 fill-primary-600 text-primary-600" />
-            <span className="text-primary-900 font-semibold text-lg">
-              4.9/5 Calificación Promedio
-            </span>
-            <Star className="w-6 h-6 fill-primary-600 text-primary-600" />
-          </div>
-        </motion.div>
       </div>
     </section>
   );

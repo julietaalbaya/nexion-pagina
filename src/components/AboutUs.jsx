@@ -21,7 +21,7 @@ const AboutUs = () => {
     {
       icon: Users,
       title: 'Compromiso',
-      description: 'Trabajamos codo a codo con nuestros clientes para garantizar su éxito y satisfacción.',
+      description: 'Trabajamos junto a nuestros clientes para garantizar su éxito y satisfacción.',
     },
     {
       icon: TrendingUp,
@@ -41,16 +41,16 @@ const AboutUs = () => {
           className="text-center mb-16"
         >
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            Quiénes <span className="text-primary-600">Somos</span>
+            Quiénes <span className="text-primary-600">somos</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mb-8">
-            Somos una empresa de desarrollo de software con más de 10 años de experiencia 
-            en el mercado, especializada en crear soluciones tecnológicas que transforman 
-            la forma en que las empresas operan y crecen.
+            Nexion Software surge en el año 2003 con el propósito de ser una empresa comprometida con el diseño, desarrollo e implementación de software de alta calidad,
+            con un enfoque primordial en la atención y soporte al cliente.
+            
           </p>
           <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
-            Nuestro equipo de expertos está comprometido con la innovación constante y la 
-            excelencia en cada proyecto, trabajando con las últimas tecnologías y metodologías 
+            Nuestro equipo de expertos está comprometido con la innovación constante y la
+            excelencia en cada proyecto, trabajando con las últimas tecnologías y metodologías
             ágiles para garantizar resultados excepcionales.
           </p>
         </motion.div>
@@ -63,8 +63,7 @@ const AboutUs = () => {
           className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-20"
         >
           {[
-            { number: '10+', label: 'Años de Experiencia' },
-            { number: '150+', label: 'Proyectos Completados' },
+            { number: '20+', label: 'Años de Experiencia' },
             { number: '50+', label: 'Clientes Satisfechos' },
             { number: '24/7', label: 'Soporte Técnico' },
           ].map((stat, index) => (
