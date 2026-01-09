@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { ArrowRight, ChevronDown } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Logo from './Icon';
 
 const Hero = () => {
@@ -71,10 +72,13 @@ const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.4 }}
         >
-          <button className="group px-8 py-4 bg-white text-primary-900 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-all duration-300 flex items-center gap-2 shadow-xl hover:shadow-2xl hover:scale-105">
+          <Link 
+            to="/productos"
+            className="group px-8 py-4 bg-white text-primary-900 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-all duration-300 flex items-center gap-2 shadow-xl hover:shadow-2xl hover:scale-105"
+          >
             Más sobre nuestros productos
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
-          </button>
+          </Link>
           <button className="px-8 py-4 border-2 border-white/30 text-white rounded-lg font-semibold text-lg hover:bg-white/10 backdrop-blur-sm transition-all duration-300 hover:border-white/50">
             Contactanos
           </button>
